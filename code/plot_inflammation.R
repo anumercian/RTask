@@ -13,6 +13,7 @@ data.in <- read.csv(options[1])
  
 # save png based on input from file name
 savename <- paste0(options[1],".png")
+# draw figure to png file
 png(filename=savename)
 plot(data.in$Day13, data.in$Day14, main = options[1], xlab = "Day 13", ylab = "Day 14", cex = 2)
 dev.off()
